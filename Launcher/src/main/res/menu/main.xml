@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_search"
+          android:title="@string/menu_search"
+          android:icon="@drawable/search"
+          android:showAsAction="ifRoom|collapseActionView"
+          android:actionViewClass="android.widget.SearchView" />
+
+    <item android:id="@+id/like_application"
+          android:title="@string/like_application"
+          android:icon="@drawable/white_star"
+          android:showAsAction="always"/>
+
+    <item android:id="@+id/all_application"
+          android:title="@string/all_application"
+          android:icon="@drawable/white_empty_star"
+          android:showAsAction="ifRoom"/>
+</menu>

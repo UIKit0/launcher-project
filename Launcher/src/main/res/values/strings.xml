@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Launcher</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="generate">Generate</string>
+    <string name="save">Save</string>
+    <string name="like_application">Like</string>
+    <string name="all_application">All</string>
+    <string name="menu_search">Search</string>
+    <string name="widget_text">Launcher widget</string>
+    <string name="widget_name">Laincher</string>
+
+</resources>
