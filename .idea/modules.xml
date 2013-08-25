@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Launcher/Launcher.iml" filepath="$PROJECT_DIR$/Launcher/Launcher.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LauncherProject.iml" filepath="$PROJECT_DIR$/LauncherProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libraries/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/libraries/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://$USER_HOME$/Distrib/JakeWharton-ActionBarSherlock-5a15d92/actionbarsherlock/actionbarsherlock.iml" filepath="$USER_HOME$/Distrib/JakeWharton-ActionBarSherlock-5a15d92/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Launcher/src/main/main.iml" filepath="$PROJECT_DIR$/Launcher/src/main/main.iml" />
     </modules>
   </component>
 </project>
