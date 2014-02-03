@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Distrib/JakeWharton-ActionBarSherlock-5a15d92/actionbarsherlock/actionbarsherlock.iml" filepath="$USER_HOME$/Distrib/JakeWharton-ActionBarSherlock-5a15d92/actionbarsherlock/actionbarsherlock.iml" />
       <module fileurl="file://$PROJECT_DIR$/Launcher/src/main/main.iml" filepath="$PROJECT_DIR$/Launcher/src/main/main.iml" />
     </modules>
   </component>

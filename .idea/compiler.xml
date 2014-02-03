@@ -2,10 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
-    <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/Launcher/src/main/gen" includeSubdirectories="true" />
-      <directory url="file://$USER_HOME$/Distrib/JakeWharton-ActionBarSherlock-5a15d92/actionbarsherlock/gen" includeSubdirectories="true" />
-    </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />

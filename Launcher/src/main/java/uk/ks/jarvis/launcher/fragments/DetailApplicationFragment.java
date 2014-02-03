@@ -5,6 +5,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.service.wallpaper.WallpaperService;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,9 +14,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockFragment;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -29,7 +28,7 @@ import uk.ks.jarvis.launcher.helpers.ApplicationHelper;
 /**
  * Created by ksk on 5/29/13.
  */
-public class DetailApplicationFragment extends SherlockFragment {
+public class DetailApplicationFragment extends Fragment {
 
 	private View view;
 	private FragmentActivity activity;

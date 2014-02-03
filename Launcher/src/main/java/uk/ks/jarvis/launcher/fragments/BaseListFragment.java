@@ -8,7 +8,11 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -16,11 +20,6 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
-
-import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
 
 import java.util.List;
 
@@ -32,7 +31,7 @@ import uk.ks.jarvis.launcher.helpers.ApplicationHelper;
 /**
  * Created by ksk on 6/1/13.
  */
-public abstract class BaseListFragment extends SherlockFragment implements SearchView.OnQueryTextListener {
+public abstract class BaseListFragment extends Fragment implements SearchView.OnQueryTextListener {
 
     private View view;
     private FragmentActivity activity;
@@ -45,12 +44,12 @@ public abstract class BaseListFragment extends SherlockFragment implements Searc
 	private SearchView mSearchView;
 	private MenuItem searchItem;
 
-	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_list, container, false);
         return view;
     }
+
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -60,7 +59,7 @@ public abstract class BaseListFragment extends SherlockFragment implements Searc
         appsHelper = new ApplicationHelper(activity);
         applicationList = fillApplicationList();//appsHelper.getApplication();
         adapter = new ListViewAdapter(activity, applicationList);
-	    setupSearchView(searchItem);
+//	    setupSearchView(searchItem);
         lView = (ListView) getActivity().findViewById(R.id.list_fragment);
         lView.setAdapter(adapter);
 
@@ -77,7 +76,7 @@ public abstract class BaseListFragment extends SherlockFragment implements Searc
 
 //        lView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                appsHelper.startApp(applicationList.get(position).getAppPackage());
+//                appsHel per.startApp(applicationList.get(position).getAppPackage());
 //                lView.invalidateViews();
 //            }
 //        });
@@ -102,10 +101,11 @@ public abstract class BaseListFragment extends SherlockFragment implements Searc
         }
     }
 
+
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 		menu.clear();
-		getSherlockActivity().getSupportMenuInflater().inflate(R.menu.main, menu);
+		getActivity().getMenuInflater().inflate(R.menu.main, menu);
 
 		searchItem = menu.findItem(R.id.action_search);
 		mSearchView = (SearchView) searchItem.getActionView();

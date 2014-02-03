@@ -1,11 +1,12 @@
-    package uk.ks.jarvis.launcher.activitys;
+package uk.ks.jarvis.launcher.activitys;
 
-import android.support.v4.app.FragmentTransaction;
-import java.sql.SQLException;
+import android.app.ActionBar;
+import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
 
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-
+import java.sql.SQLException;
 import java.util.List;
 
 import uk.ks.jarvis.launcher.R;
@@ -15,7 +16,7 @@ import uk.ks.jarvis.launcher.databases.dao.ApplicationDAO;
 import uk.ks.jarvis.launcher.fragments.FavoriteApplicationListFragment;
 import uk.ks.jarvis.launcher.helpers.ApplicationHelper;
 
-public class MainActivity extends SherlockFragmentActivity {
+public class MainActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,3 +45,4 @@ public class MainActivity extends SherlockFragmentActivity {
     }
 
 }
+
